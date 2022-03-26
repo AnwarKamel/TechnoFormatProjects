@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="230dp"
+            android:src="@drawable/logo_two"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login or Signup"
+            android:textSize="32sp"
+            android:textColor="@color/light_bg_dark_primary_text"
+            />
+        <View
+            android:layout_width="250dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/red_500"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_go_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:layout_marginTop="32dp"
+            app:backgroundTint="@color/green_600"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue with Facebook"
+            app:backgroundTint="@color/blue_500"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_facebook"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue with  Google"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/red_500"
+            android:drawableLeft="@drawable/ic_google"
+
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By registering or skipping this step your agree to Terms of Service"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/light_bg_dark_primary_text"
+            />
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
