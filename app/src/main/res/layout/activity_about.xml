@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activities.AboutActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp"
+        android:inputType="text"
+
+        />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:textAllCaps="false"
+        android:textSize="32sp"
+        android:textColor="@color/red_900"
+        android:onClick="show"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
